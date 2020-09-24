@@ -2569,7 +2569,12 @@ width: 10px;
 	.popups-content {
 		min-height: 0;
 	}
-
+	.calendar-time, .calendar-time-add {
+		font-size: 14px;
+	}
+	.calendar-main {
+    padding: 0 5px;
+}
 }
 
 @media (max-width: 992px) {
@@ -2907,6 +2912,9 @@ width: 10px;
 }
 
 @media (max-width: 480px) {
+	input[type="time"]::-webkit-calendar-picker-indicator {
+		display: none;
+	}
     .content-two-left,
     .content-two-right {
         width: 100%;
