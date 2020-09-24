@@ -2913,7 +2913,10 @@ width: 10px;
 
 @media (max-width: 480px) {
 	input[type="time"]::-webkit-calendar-picker-indicator {
-		display: none;
+		display: none; 
+		
+		
+		
 	}
     .content-two-left,
     .content-two-right {
