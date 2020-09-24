@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tagged</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="/libs/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/slick.css">
+        <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
+        <link rel="stylesheet" href="/libs/lightbox/css/lightbox.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css?v=1.2">
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+		
+		<section id="tagged">
+			<div class="layout">
+				<div class="layout-layer">
+					<div class="leftcol">
+						<div class="logo">logo</div>
+						<div class="leftcol-sections">
+							<section class="leftcol-section">
+								<h3>Content</h3>
+								<ul class="leftcol-links">
+									<li><a href="/" class="leftcol-link" id="icon-view">Home<span></span></a></li>
+									<li><a href="/scheduled-content.html" class="leftcol-link" id="icon-time">Sheduled<span></span></a></li>
+									<li  class="active"><a href="/tagged.html" class="leftcol-link" id="icon-email">Tagged<span></span></a></li>
+									<li><a href="/feeds.html" class="leftcol-link" id="icon-board">Feeds</a></li>
+								</ul>
+							</section>
+							<section class="leftcol-section">
+								<h3>Promotion</h3>
+								<ul class="leftcol-links">
+									<li><a href="/calendar.html" class="leftcol-link" id="icon-calendar">Posting Shedule<span></span></a></li>
+									<li><a href="/hashtags.html" class="leftcol-link" id="icon-hashtag">Hashtags Poster<span></span></a></li>
+								</ul>
+							</section>
+							<section class="leftcol-section">
+								<h3>Accounts</h3>
+								<ul class="leftcol-links">
+									<li><a href="/profiles.html" class="leftcol-link" id="icon-profiles">Profiles<span></span></a></li>
+									<li><a href="/accounts.html" class="leftcol-link" id="icon-inst">Instagram Accounts<span></span></a></li>
+									<li><a href="/settings.html" class="leftcol-link" id="icon-settings">Settings<span></span></a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				<div class="rightcol">
+					<header id="header">
+						<!-- <div class="mobile-menu hidden-lg hidden-md hidden-sm visible-xs">
+							<button id="btn-mobile"><i class="fa fa-bars" aria-hidden="true"></i></button>
+						</div> -->
+						<div class="header-panel">
+							<div class="search">
+								<form action="#" id="header_search">
+									<input type="text" placeholder="Find everything...">
+								</form>
+							</div>
+							<div class="myaccount">
+								<div class="myaccount-notification"></div>
+								<div class="myaccount-profile">
+									<div class="myaccount-photo"><img src="/images/photo.png" alt=""></div>
+									<div class="myaccount-name">John Doe</div>
+								</div>
+								<div class="myaccount-down"><img src="/images/down.png" alt=""></div>
+								<div class="myaccount-dropdown">
+									<ul>
+										<li><a href="/settings.html">Account Settings</a></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<section id="mobpanel" class="mobyes mainmenubg hidden-lg hidden-md">
+						   <div class="panelwrap">
+							  <button id="btn-mobile" class="butt mobaction noborder open"><i class="fa fa-bars" aria-hidden="true"></i></button>
+							  <div class="panelr ">
+								 <button id="mobsearch" class="butt mobaction noborder"><i class="fa fa-search" aria-hidden="true"></i></button>
+							  </div>
+						   </div>
+						   <div class="panelsearch mainmenubg none" style="display: none;">
+							  <div class="searchform">
+								<div class="search">
+									<form action="#" id="mheader_search">
+										<input type="text" placeholder="Find everything...">
+									</form>
+								</div>
+							  </div>
+						   </div>
+						   <div class="mobile-account"><div class="myaccount-photo"><a href="#"><img src="/images/photo.png" alt=""></a></div></div>
+						</section>
+					</header>
+					<div class="maincol">
+						<section id="scheduled">
+							<div class="content-top">
+								<h1>Tags</h1>
+								
+								<div class="input-block">
+									<div class="input-select" id="show">							
+									<label>Show: <select name="show" class="">
+									<option value="10">10</option>
+									<option value="25">25</option>
+									<option value="50">50</option>
+									<option value="100">100</option></select><!-- <img src="/images/down.svg"> --> </label></div>
+									
+									<div class="input-select" id="sort">							
+									<label>Sorted by: <select name="sort" class="">
+									<option value="Account">Account</option>
+									<option value="Name">Name</option>
+									<option value="Date">Date</option>
+									</select><!-- <img src="/images/down.svg"> --> </label></div>
+									
+									<div class="input-select" id="datetime">
+										<div id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%; text-align: center;">
+											<span></span> <i class="fa fa-caret-down"></i>
+										</div>
+									</div>
+								</div>
+								
+								
+						
+							</div>
+							<div class="scheduled-items tagged">
+								
+								
+								<div class="scheduled-item item-left">
+									<div class="sheduled-item-thumb" style="background-image: url(/images/sheduled-1.jpg)"></div>
+									<div class="sheduled-item-info">
+										<div class="sheduled-item-text">The same sun doesn't bring a new day. The people around you do so. So, don't expect to get a better day. Expectations are lethal. 
+										#sunrise #hills #mountain #sunrisefromthehill #instasky #instasun #instagram #instatravel #instaphoto #instamoment  #f4follow #followｍe #follow #f4f #travelphotography #travelling #traveller #travels #travelgram #travelpics #traveler #tra…<a class="seemore" href="#">See more</a></div>
+										<div class="sheduled-item-time">
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Account</span><span class="sheduled-time-value">@instagramlink</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Tags</span><span class="sheduled-time-value">15</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Likes</span><span class="sheduled-time-value">775</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Type</span><span class="sheduled-time-value">image</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Post date</span><span class="sheduled-time-value">2018.06.27</span>
+											</div>
+										</div>
+										<div class="sheduled-item-remove"></div>
+										<div class="button-remove">
+											<button class="btn-main">Save</button>
+											<button class="btn-red">Remove</button>
+										</div>										
+									</div>	
+									
+								</div>
+								<div class="scheduled-item">
+									<div class="sheduled-item-thumb" style="background-image: url(/images/sheduled-1.jpg)"></div>
+									<div class="sheduled-item-info">
+										<div class="sheduled-item-text">The same sun doesn't bring a new day. The people around you do so. So, don't expect to get a better day. Expectations are lethal. 
+										#sunrise #hills #mountain #sunrisefromthehill #instasky #instasun #instagram #instatravel #instaphoto #instamoment  #f4follow #followｍe #follow #f4f #travelphotography #travelling #traveller #travels #travelgram #travelpics #traveler #tra…<a class="seemore" href="#">See more</a></div>
+										<div class="sheduled-item-time">
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Account</span><span class="sheduled-time-value">@instagramlink</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Tags</span><span class="sheduled-time-value">15</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Likes</span><span class="sheduled-time-value">775</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Type</span><span class="sheduled-time-value">image</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Post date</span><span class="sheduled-time-value">2018.06.27</span>
+											</div>
+										</div>
+										<div class="sheduled-item-remove"></div>
+										<div class="button-remove">
+											<button class="btn-main">Save</button>
+											<button class="btn-red">Remove</button>
+										</div>										
+									</div>	
+									
+								</div>
+								<div class="scheduled-item item-right">
+									<div class="sheduled-item-thumb" style="background-image: url(/images/sheduled-1.jpg)"></div>
+									<div class="sheduled-item-info">
+										<div class="sheduled-item-text"> <div class="bordered-text">#D3300 #NikonD3300 #GranCanaria #Canarias  #Photo #Photography #Reflex #nikonistas #photographer  #nofilter #nofilters #LasPalmas  #ig_laspalmas #photoart #pixcommunity #colors #flowers #nature #instaframecanarias #ig_photokanarias #ig_laspalmas #zetitafoto #lisbon #lisboa #travelers @pixcommunity @ig_laspa</div></div>
+										<div class="sheduled-item-time">
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Account</span><span class="sheduled-time-value">@instagramlink</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Tags</span><span class="sheduled-time-value">15</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Likes</span><span class="sheduled-time-value">775</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Type</span><span class="sheduled-time-value">image</span>
+											</div>
+											<div class="tagged-item-param">
+												<span class="sheduled-time-caption">Post date</span><span class="sheduled-time-value">2018.06.27</span>
+											</div>
+										</div>
+										<div class="sheduled-item-remove"></div>
+										<div class="button-remove">
+											<button class="btn-main">Save</button>
+											<button class="btn-red">Remove</button>
+										</div>										
+									</div>	
+									
+								</div>
+								
+	
+								
+
+								
+								
+
+								
+								
+								
+								
+							
+							</div>
+						</section>
+					</div>
+				</div>
+								</div>
+
+			</div>
+			
+		</section>	
+        	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/slick.min.js"></script>
+        <script src="/libs/lightbox/js/lightbox.js" ></script>
+        <script src="/js/maskedinput.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script src="/js/main.js"></script>
+		
+		<script>
+			$(function() {
+
+				var start = moment().subtract(29, 'days');
+				var end = moment();
+
+				function cb(start, end) {
+					$('#reportrange span').html(start.format('MMMM D') + ' - ' + end.format('MMMM D'));
+				}
+
+				$('#reportrange').daterangepicker({
+					startDate: start,
+					endDate: end,					
+					ranges: {
+					   'Today': [moment(), moment()],
+					   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+					   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+					   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+					   'This Month': [moment().startOf('month'), moment().endOf('month')],
+					   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+					},
+					opens: 'left',
+				}, cb);
+
+				cb(start, end);
+
+			});
+</script>
+
+       
+    </body>
+</html>
